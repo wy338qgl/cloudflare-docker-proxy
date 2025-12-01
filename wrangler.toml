@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "rushb.dpdns.org"
+CUSTOM_DOMAIN = "ack.qzz.io"
 
 [env.dev.vars]
 MODE = "debug"
@@ -17,13 +17,13 @@ CUSTOM_DOMAIN = "exmaple.com"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.rushb.dpdns.org", custom_domain = true },
-  { pattern = "quay.rushb.dpdns.org", custom_domain = true },
-  { pattern = "gcr.rushb.dpdns.org", custom_domain = true },
-  { pattern = "k8s-gcr.rushb.dpdns.org", custom_domain = true },
-  { pattern = "k8s.rushb.dpdns.org", custom_domain = true },
-  { pattern = "ghcr.rushb.dpdns.org", custom_domain = true },
-  { pattern = "cloudsmith.rushb.dpdns.org", custom_domain = true },
+  { pattern = "docker.ack.qzz.io", custom_domain = true },
+  { pattern = "quay.ack.qzz.io", custom_domain = true },
+  { pattern = "gcr.ack.qzz.io", custom_domain = true },
+  { pattern = "k8s-gcr.ack.qzz.io", custom_domain = true },
+  { pattern = "k8s.ack.qzz.io", custom_domain = true },
+  { pattern = "ghcr.ack.qzz.io", custom_domain = true },
+  { pattern = "cloudsmith.ack.qzz.io", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -32,7 +32,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.rushb.dpdns.org", custom_domain = true }
+# route = { pattern = "docker-staging.ack.qzz.io", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
